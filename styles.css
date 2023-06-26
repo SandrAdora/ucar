@@ -1,0 +1,180 @@
+ 
+  
+
+  body {
+    background-color: #f2f2f2;
+    color: rgb(17, 11, 24);
+    font-family: Arial, sans-serif;
+    background-image: url('651.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .window {
+    display: none;
+  }
+  ol li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px;
+    animation: fade-in 1s ease-in-out;
+  }
+  li a:hover {
+    background-color: #586c91;
+  }
+  li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: #34495e;
+    padding: 10px;
+  }
+  h2, h1, p {
+    text-align: center;
+  }
+  .centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; 
+    margin-top: 50px; 
+    color: #395282;
+    
+  }
+  .centered-content h2 {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+    text-align: left;
+  }
+  .right-align {
+    text-align: right;
+  }
+
+
+.container-wrapper {
+display: flex;
+justify-content: space-between;
+padding: 50px;
+}    
+.container_v {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #34495e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}   
+
+.container_v{
+width: 30%;
+}
+.container_v li {
+    margin-bottom: 10px;
+  }
+.container_v:hover {
+    background-color: #e0e0e0;
+  }
+.container_v {
+background-color: #34495e;  
+padding: 60px;
+}
+.container_v
+  {
+     
+    background-color: #34495e;
+    padding: 20px;
+    margin-bottom: 20px;
+  
+
+}
+
+
+.container_m
+  {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #b44f19;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+
+  }
+.container_m
+{
+background-color: #b44f19;
+padding: 60px;
+margin-bottom: 20px;
+}
+.container_m:hover
+  {
+    background-color: #e0e0e0;
+  }
+
+.container_m li{
+    margin-bottom: 10px;
+  }
+
+.container_m {
+width: 30%;
+}
+img{
+height: 50px;
+width: 25px;
+}
+.fahrzeuge-container {
+background-color: #f2f2f2;
+padding: 10px;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+.fahrzeuge {
+margin: 0;
+padding: 30px;
+text-align: center;
+}
+
+.fahrzeuge li {
+margin-bottom: 10px;
+padding: 20px;
+}
+
+.download-icon {
+display: none;
+}
+
+#U_Car_download .download-icon {
+display: block;
+text-align: center;
+margin-top: 20px;
+}
+.p-home
+{
+font-display: auto;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+padding: auto;
+margin-top: 70px;
+font-size: large;
+}

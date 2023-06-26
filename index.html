@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U Car</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <li><span class="logo">U Car<li><a href="index.html">home</a></li></span></li>
+      
+      <ul class="right-align"> 
+        
+
+        <li><a href="#" onclick="showWindow('features')">Anforderungen</a></li>
+        <li><a href="#" onclick="showWindow('Fahrzeugauswahl')">Fahrzeugauswahl</a></li>
+        <li><a href="#" onclick="showWindow('Bedienungsanleitung')">Bedienungsanleitung</a></li>
+        <li><a href="#" onclick="showWindow('U_Car_download')">Download</a></li>
+        <li><a href="#" onclick="showWindow('Kontakt')">Kontakt</a></li>
+
+        
+      </ul>
+    </nav>
+  </header>
+  <h1>U Car System</h1>
+  <div id="container-home" class="container-home">
+
+    <p class="p-home">U-Car ist eine Anwendung für <strong><i>Privatpersonen, die ihren Pkw selten nutzen und für die, <br>die spontan einen benötigen</i></strong>,
+      <strong><i>aber kein Eigenes besitzen</i></strong>. Fahrzeugeigentümer können <br>ihre Fahrzeuge <i>registrieren</i> und für festgelegte Zeiten 
+      zur <i>Buchung</i> freigeben. Andere Nutzer können eine <i> <br>Reservierung oder Buchung anfragen</i>, die vom Eigentümer <i>bestätigt</i> werden muss. 
+      Auf diese Weise können <br>Nutzer ein Fahrzeug für den gewünschten Zeitraum gegen eine <i>Gebühr</i> ausleihen. 
+     Fahrzeugeigentümer erhalten am <br>Monatsende eine <i>Gutschrift</i> entsprechend der Ausleihdauer. </p> 
+  </div>
+
+  
+
+  <div id="features" class="window">
+    <p>Dieses System wurde im Rahmen des Moduls <i>Softwareparktikum</i> entwickelt, um <i>hautnah</i> mitzuerleben, wie ein <strong>Software</strong> entwickelt wird.</p>
+    <p>Das Software wurde als <strong>Desktopanwendung für Linux</strong> entwickelt, um private Fahrzeuge anzumieten oder zu vermieten.</p>
+    <p>Für die Nutzung dieses Sofwares ist ein <strong> Benutzerkonto </strong> sowie den Nachweis eines gültigen <strong> Führerscheins </strong> erforderlich!</p>
+
+   
+    <div class="container-wrapper">
+      <div class="container_v">
+        <h3>Möglichkeiten als Vermieter:</h3>
+        <ul>
+          <li><strong>Fahrzeug registrieren</strong></li>
+          <li><strong>Buchungen nach Belieben bestätigen / ablehnen</strong></li>
+          <li><strong>Flexible Fahrzeugverfügungszeiträume</strong></li>
+          <li><strong>Mehrere Fahrzeuge zur Vermietung zur Verfügung stellen</strong></li>
+        </ul>
+      </div>
+      <div class="container_m">
+        <h3>Möglichkeiten als Mieter:</h3>
+        <ul>
+          <li><strong>Fahrzeug buchen</strong></li>
+          <li><strong>Flexible Fahrzeugverfügungszeiträume eingeben</strong></li>
+          <li><strong>Mehrere Buchungen tätigen</strong></li>
+          <li><strong>Kein Nachweis einer Kreditkarte erforderlich</strong></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="Fahrzeugauswahl" class="window">
+    <div class="fahrzeuge-container">
+      <div class="fahrzeuge">
+        <ul>
+          <li><strong>Cabrios</strong></li>
+          <li><strong>Kleinwagen</strong></li>
+          <li><strong>Limosine</strong></li>
+          <li><strong>SUV</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<div id="U_Car_download" class="window">
+  <h2>Software download</h2>
+  <div class="download-icon">
+    <a href="#" onclick="showWindow('download')">
+      <img src="key.png" alt="download"> Software download
+    </a>
+  </div>
+</div>
+
+
+  <footer>
+    <p>&copy; 2023 U Car System. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  
+  <script>
+    function showWindow(windowId) {
+      var windows = document.getElementsByClassName('window');
+      for (var i = 0; i < windows.length; i++) {
+        windows[i].style.display = 'none';
+      }
+      document.getElementById(windowId).style.display = 'block';
+      document.getElementById('container-home').style.display = 'none'; 
+    }
+  </script>
+</body>
+</html>
+
