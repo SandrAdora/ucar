@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BuchungsAnsicht</class>
+ <widget class="QWidget" name="BuchungsAnsicht">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QListWidget" name="listWidget_buchungen">
+     <item>
+      <property name="text">
+       <string>test_item</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>listWidget_buchungen</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>BuchungsAnsicht</receiver>
+   <slot>listWidget_buchungen_itemClicked(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>listWidget_buchungen_itemClicked(QListWidgetItem*)</slot>
+ </slots>
+</ui>

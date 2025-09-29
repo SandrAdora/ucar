@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AbschlussDetail</class>
+ <widget class="QDialog" name="AbschlussDetail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_beginn">
+     <property name="text">
+      <string>Beginn:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QDateTimeEdit" name="dateTimeEdit_beginn"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_ende">
+     <property name="text">
+      <string>Ende:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QDateTimeEdit" name="dateTimeEdit_ende"/>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="label_kilometer">
+     <property name="text">
+      <string>Kilometerstand:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="2">
+    <widget class="QLabel" name="label_tank">
+     <property name="text">
+      <string>Tankfüllstand:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_kilometer_vor">
+     <property name="text">
+      <string>Vor:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_kilometer_vor"/>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_tank_vor">
+     <property name="text">
+      <string>Vor:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_kilometer_nach">
+     <property name="text">
+      <string>Nach:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_kilometer_nach"/>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_tank_nach">
+     <property name="text">
+      <string>Nach:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="4">
+    <widget class="QPushButton" name="pushButton_absenden">
+     <property name="text">
+      <string>Absenden</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_tank_vor"/>
+   </item>
+   <item row="3" column="3">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_tank_nach"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_absenden</sender>
+   <signal>clicked()</signal>
+   <receiver>AbschlussDetail</receiver>
+   <slot>pushButton_absenden_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_absenden_clicked()</slot>
+ </slots>
+</ui>

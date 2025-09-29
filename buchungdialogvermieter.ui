@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BuchungDialogVermieter</class>
+ <widget class="QDialog" name="BuchungDialogVermieter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton_bestaetigen">
+     <property name="text">
+      <string>Bestätigen</string>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>300</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_rechnung">
+     <property name="text">
+      <string>Rechnung ansehen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton_ablehnen">
+     <property name="text">
+      <string>Ablehnen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_info">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_info">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_ablehnen</sender>
+   <signal>clicked()</signal>
+   <receiver>BuchungDialogVermieter</receiver>
+   <slot>pushButton_ablehnen_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>106</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_bestaetigen</sender>
+   <signal>clicked()</signal>
+   <receiver>BuchungDialogVermieter</receiver>
+   <slot>pushButton_bestaetigen_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>390</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_rechnung</sender>
+   <signal>clicked()</signal>
+   <receiver>BuchungDialogVermieter</receiver>
+   <slot>pushButton_rechnung_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>126</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_bestaetigen_clicked()</slot>
+  <slot>pushButton_ablehnen_clicked()</slot>
+  <slot>pushButton_rechnung_clicked()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FahrzeugDetail</class>
+ <widget class="QDialog" name="FahrzeugDetail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton_bearbeiten">
+     <property name="text">
+      <string>Bearbeiten</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton_loeschen">
+     <property name="text">
+      <string>Löschen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_info">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_bearbeiten</sender>
+   <signal>clicked()</signal>
+   <receiver>FahrzeugDetail</receiver>
+   <slot>pushButton_bearbeiten_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>19</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_loeschen</sender>
+   <signal>clicked()</signal>
+   <receiver>FahrzeugDetail</receiver>
+   <slot>pushButton_loeschen_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_bearbeiten_clicked()</slot>
+  <slot>pushButton_loeschen_clicked()</slot>
+ </slots>
+</ui>

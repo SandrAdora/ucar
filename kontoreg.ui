@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KontoReg</class>
+ <widget class="QDialog" name="KontoReg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_vorname">
+     <property name="text">
+      <string>Vorname:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_email">
+     <property name="text">
+      <string>Email-Adresse:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QLineEdit" name="lineEdit_passwort"/>
+   </item>
+   <item row="4" column="1">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>weiblich</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>männlich</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>divers</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_geschlecht">
+     <property name="text">
+      <string>Geschlecht</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_strasse">
+       <property name="text">
+        <string>Straße:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_strasse"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_ort">
+       <property name="text">
+        <string>Ort:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_ort"/>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_vorname"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_name">
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="lineEdit_mobil"/>
+   </item>
+   <item row="9" column="1">
+    <widget class="QLineEdit" name="lineEdit_email"/>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEdit_name"/>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_passwort">
+     <property name="text">
+      <string>Passwort:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_absenden">
+     <property name="text">
+      <string>Absenden</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDateEdit" name="dateEdit_geburtsdatum">
+     <property name="displayFormat">
+      <string>dd.MM.yy</string>
+     </property>
+     <property name="date">
+      <date>
+       <year>1900</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_geburtsdatum">
+     <property name="text">
+      <string>Geburtsdatum:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox_berechtigung">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mieter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vermieter</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_berechtigung">
+     <property name="text">
+      <string>Kontoart:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_hausnummer">
+       <property name="text">
+        <string>Hausnummer:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_hausnummer"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_plz">
+       <property name="text">
+        <string>PLZ:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_plz"/>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_mobil">
+     <property name="text">
+      <string>Mobil:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label__fuehrerscheinklasse">
+     <property name="text">
+      <string>Führerscheinklasse</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLineEdit" name="lineEdit_fklasse"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_absenden</sender>
+   <signal>clicked()</signal>
+   <receiver>KontoReg</receiver>
+   <slot>pushButton_absenden_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>358</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_absenden_clicked()</slot>
+ </slots>
+</ui>

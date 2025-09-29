@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FahrzeugReg</class>
+ <widget class="QDialog" name="FahrzeugReg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>575</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_fahrzeugtyp">
+     <property name="text">
+      <string>Fahrzeugtyp:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_beschaedigung">
+     <property name="text">
+      <string>Beschädigungen:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_farbe"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_farbe">
+     <property name="text">
+      <string>Farbe:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" colspan="4">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_di">
+       <property name="text">
+        <string>Di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_mi">
+       <property name="text">
+        <string>Mi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_fr">
+       <property name="text">
+        <string>Fr</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_mo">
+       <property name="text">
+        <string>Mo</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_do">
+       <property name="text">
+        <string>Do</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_so">
+       <property name="text">
+        <string>So</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_sa">
+       <property name="text">
+        <string>Sa</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QTimeEdit" name="timeEdit_mo_von"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QTimeEdit" name="timeEdit_mo_bis"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QTimeEdit" name="timeEdit_di_von"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QTimeEdit" name="timeEdit_di_bis"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QTimeEdit" name="timeEdit_mi_von"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QTimeEdit" name="timeEdit_mi_bis"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QTimeEdit" name="timeEdit_do_von"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QTimeEdit" name="timeEdit_do_bis"/>
+     </item>
+     <item row="1" column="4">
+      <widget class="QTimeEdit" name="timeEdit_fr_von"/>
+     </item>
+     <item row="2" column="4">
+      <widget class="QTimeEdit" name="timeEdit_fr_bis"/>
+     </item>
+     <item row="1" column="5">
+      <widget class="QTimeEdit" name="timeEdit_sa_von"/>
+     </item>
+     <item row="2" column="5">
+      <widget class="QTimeEdit" name="timeEdit_sa_bis"/>
+     </item>
+     <item row="1" column="6">
+      <widget class="QTimeEdit" name="timeEdit_so_von"/>
+     </item>
+     <item row="2" column="6">
+      <widget class="QTimeEdit" name="timeEdit_so_bis"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_kennzeichen">
+     <property name="text">
+      <string>Kennzeichen:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="4">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_strasse"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_ort"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_ort">
+       <property name="text">
+        <string>Ort:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_hausnr">
+       <property name="text">
+        <string>Hausnummer</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="lineEdit_hausnr"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_plz">
+       <property name="text">
+        <string>PLZ:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="lineEdit_plz"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_strasse">
+       <property name="text">
+        <string>Straße:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_parkplatznr">
+       <property name="text">
+        <string>Parkplatznummer:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="lineEdit_parkplatznr"/>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_marke"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_marke">
+     <property name="text">
+      <string>Marke:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_beschaedigung"/>
+   </item>
+   <item row="1" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_art"/>
+   </item>
+   <item row="9" column="0" colspan="4">
+    <widget class="QLabel" name="label_verfuegbar">
+     <property name="text">
+      <string>Verfügbarkeit:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="3">
+    <widget class="QSpinBox" name="spinBox_sitze"/>
+   </item>
+   <item row="11" column="0" colspan="4">
+    <widget class="QPushButton" name="pushButton_absenden">
+     <property name="text">
+      <string>Absenden</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="3">
+    <widget class="QComboBox" name="comboBox_fahrzeugtyp">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cabrio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kleinwagen</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Limousine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kombi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Minivan</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUV</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_art">
+     <property name="text">
+      <string>Art:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_kennzeichen"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_sitze">
+     <property name="text">
+      <string>Sitzplätze:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Baujahr:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_baujahr"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_absenden</sender>
+   <signal>clicked()</signal>
+   <receiver>FahrzeugReg</receiver>
+   <slot>pushButton_absenden_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>370</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_absenden_clicked()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginAnsicht</class>
+ <widget class="QDialog" name="LoginAnsicht">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_passwort">
+     <property name="text">
+      <string>Passwort:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_nutzername"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_nutzername">
+     <property name="text">
+      <string>Email:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEdit_passwort"/>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_registrieren">
+     <property name="text">
+      <string>Registrieren</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_anmelden">
+     <property name="text">
+      <string>Anmelden</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_art">
+     <property name="text">
+      <string>Anmelden als:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox_art">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mieter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vermieter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Admin</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_anmelden</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginAnsicht</receiver>
+   <slot>pushButton_anmelden_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_registrieren</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginAnsicht</receiver>
+   <slot>pushButton_registrieren_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>26</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_anmelden_clicked()</slot>
+  <slot>pushButton_registrieren_clicked()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BuchungDialogMieter</class>
+ <widget class="QDialog" name="BuchungDialogMieter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_stornieren">
+     <property name="text">
+      <string>Stornieren</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_rechnung">
+     <property name="text">
+      <string>Rechnung ansehen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_abschliessen">
+     <property name="text">
+      <string>Abschließen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="label_info">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="label_info">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_stornieren</sender>
+   <signal>clicked()</signal>
+   <receiver>BuchungDialogMieter</receiver>
+   <slot>pushButton_stornieren_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_abschliessen</sender>
+   <signal>clicked()</signal>
+   <receiver>BuchungDialogMieter</receiver>
+   <slot>pushButton_abschliessen_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>45</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_rechnung</sender>
+   <signal>clicked()</signal>
+   <receiver>BuchungDialogMieter</receiver>
+   <slot>pushButton_rechnung_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_stornieren_clicked()</slot>
+  <slot>pushButton_abschliessen_clicked()</slot>
+  <slot>pushButton_rechnung_clicked()</slot>
+ </slots>
+</ui>

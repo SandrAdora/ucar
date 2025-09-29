@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FahrzeugAnsicht</class>
+ <widget class="QWidget" name="FahrzeugAnsicht">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QListWidget" name="listWidget_fahrzeuge"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_neu">
+     <property name="text">
+      <string>Neues Fahrzeug</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_neu</sender>
+   <signal>clicked()</signal>
+   <receiver>FahrzeugAnsicht</receiver>
+   <slot>pushButton_neu_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_fahrzeuge</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>FahrzeugAnsicht</receiver>
+   <slot>listWidget_fahrzeuge_itemClicked(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_neu_clicked()</slot>
+  <slot>listWidget_fahrzeuge_itemClicked(QListWidgetItem*)</slot>
+ </slots>
+</ui>

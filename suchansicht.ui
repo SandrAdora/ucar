@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SuchAnsicht</class>
+ <widget class="QWidget" name="SuchAnsicht">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>338</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="3">
+    <widget class="QLineEdit" name="lineEdit_stadt"/>
+   </item>
+   <item row="2" column="1">
+    <widget class="QSpinBox" name="spinBox_sitze"/>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_datum">
+     <property name="text">
+      <string>Datum:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_stadt">
+     <property name="text">
+      <string>Stadt:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QComboBox" name="comboBox_typ">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cabrio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kleinwagen</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Limousine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kombi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Minivan</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SUV</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_typ">
+     <property name="text">
+      <string>Typ:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="4">
+    <widget class="QPushButton" name="pushButton_suchen">
+     <property name="text">
+      <string>Suchen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QDateEdit" name="dateEdit_datum"/>
+   </item>
+   <item row="6" column="0" colspan="4">
+    <widget class="QListWidget" name="listWidget_ergebnisse"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_sitze">
+     <property name="text">
+      <string>Sitze:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_beginn">
+     <property name="text">
+      <string>Beginn:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLabel" name="label_ende">
+     <property name="text">
+      <string>Ende:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QTimeEdit" name="timeEdit_beginn"/>
+   </item>
+   <item row="4" column="3">
+    <widget class="QTimeEdit" name="timeEdit_ende"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>listWidget_ergebnisse</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>SuchAnsicht</receiver>
+   <slot>listWidget_ergebnisse_itemClicked(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_suchen</sender>
+   <signal>clicked()</signal>
+   <receiver>SuchAnsicht</receiver>
+   <slot>pushButton_suchen_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>listWidget_ergebnisse_itemClicked(QListWidgetItem*)</slot>
+  <slot>pushButton_suchen_clicked()</slot>
+ </slots>
+</ui>
