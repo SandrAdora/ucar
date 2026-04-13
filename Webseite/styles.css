@@ -225,7 +225,8 @@ body {
   min-height: calc(100vh - 64px);
 }
 
-.section.hidden {
+.section.hidden,
+.hero.hidden {
   display: none;
 }
 
