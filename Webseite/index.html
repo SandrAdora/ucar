@@ -1,317 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>U Car</title>
-<link rel="stylesheet" href="styles.css">
-<style>
-   
-  
-
-  body {
-    background-color: #f2f2f2;
-    color: rgb(17, 11, 24);
-    font-family: Arial, sans-serif;
-    background-image: url('651.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .window {
-    display: none;
-  }
-  ol li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 35px;
-    animation: fade-in 1s ease-in-out;
-  }
-  li a:hover {
-    background-color: #586c91;
-  }
-  li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav {
-    background-color: #34495e;
-    padding: 10px;
-  }
-  h2, h1, p {
-    text-align: center;
-  }
-  .centered-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px; 
-    margin-top: 50px; 
-    color: #395282;
-    
-  }
-  .centered-content h2 {
-    margin-bottom: 20px;
-  }
-
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    margin-right: 10px;
-    text-align: left;
-  }
-  .right-align {
-    text-align: right;
-  }
-
-
-.container-wrapper {
-display: flex;
-justify-content: space-between;
-padding: 50px;
-}    
-.container_v {
-    position: relative;
-    width: 400px;
-    height: 200px;
-    background-color: #34495e;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
-}   
-
-.container_v{
-width: 30%;
-}
-.container_v li {
-    margin-bottom: 10px;
-  }
-.container_v:hover {
-    background-color: #e0e0e0;
-  }
-.container_v {
-background-color: #34495e;  
-padding: 60px;
-}
-.container_v
-  {
-     
-    background-color: #34495e;
-    padding: 20px;
-    margin-bottom: 20px;
-  
-
-}
-
-
-.container_m
-  {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: #b44f19;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
-
-  }
-.container_m
-{
-background-color: #b44f19;
-padding: 60px;
-margin-bottom: 20px;
-}
-.container_m:hover
-  {
-    background-color: #e0e0e0;
-  }
-
-.container_m li{
-    margin-bottom: 10px;
-  }
-
-.container_m {
-width: 30%;
-}
-img{
-height: 50px;
-width: 25px;
-}
-.fahrzeuge-container {
-background-color: #f2f2f2;
-padding: 10px;
-border-radius: 5px;
-transition: background-color 0.3s ease;
-}
-
-.fahrzeuge {
-margin: 0;
-padding: 30px;
-text-align: center;
-}
-
-.fahrzeuge li {
-margin-bottom: 10px;
-padding: 20px;
-}
-
-.download-icon {
-display: none;
-}
-
-#U_Car_download .download-icon {
-display: block;
-text-align: center;
-margin-top: 20px;
-}
-.p-home
-{
-font-display: auto;
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-padding: auto;
-margin-top: 70px;
-font-size: large;
-}
-
-#contact_formular {
-  box-shadow: 12px 12px 2px 1px #34495e;
-}
-#message-box{
-  width: 350px;
-  height: 350px;
-
-  right: 20px;
-  top: 20px;
-  background: ;: #e8f4ff;
-  padding: 15px 20px;
-  
-}
-</style>
+  <title>U Car – Private Fahrzeugvermietung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <li><span class="logo">U Car<li><a href="./">home</a></li></span></li>
-      
-      <ul class="right-align"> 
-        
 
-        <li><a href="#" onclick="showWindow('features')">Anforderungen</a></li>
-        <li><a href="#" onclick="showWindow('Fahrzeugauswahl')">Fahrzeugauswahl</a></li>
-        <li><a href="#" onclick="showWindow('Bedienungsanleitung')"><a href="https://drive.google.com/file/d/1qRBswHkbANvtwwV-Tvjq1PjbI9y_FS_t/view?usp=drive_link">Bedienungsanleitung</a></a></li>
-        <li><a href="#" onclick="showWindow('U_Car_download')"><a href="https://drive.google.com/file/d/1BlZDDTPIeu1mG1zTHVydZ71lp_w7iI9i/view?usp=drive_link"> Software download</a></a></li>
-        <li><a href="#" onclick="showWindow('Kontakt')">Kontakt</a></li>
-
-        
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="./" class="nav-logo">U Car</a>
+      <button class="nav-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="./" onclick="showHome()">Home</a></li>
+        <li><a href="#" onclick="showSection('features')">Anforderungen</a></li>
+        <li><a href="#" onclick="showSection('fahrzeugauswahl')">Fahrzeugauswahl</a></li>
+        <li><a href="https://drive.google.com/file/d/1qRBswHkbANvtwwV-Tvjq1PjbI9y_FS_t/view?usp=drive_link" target="_blank">Bedienungsanleitung</a></li>
+        <li><a href="https://drive.google.com/file/d/1BlZDDTPIeu1mG1zTHVydZ71lp_w7iI9i/view?usp=drive_link" target="_blank" class="btn-download">Software Download</a></li>
+        <li><a href="#" onclick="showSection('kontakt')">Kontakt</a></li>
       </ul>
     </nav>
   </header>
-  <h1>U Car System</h1>
-  <div id="container-home" class="container-home">
 
-    <p class="p-home">U-Car ist eine Anwendung für <strong><i>Privatpersonen, die ihren Pkw selten nutzen und für die, <br>die spontan einen benötigen</i></strong>,
-      <strong><i>aber kein Eigenes besitzen</i></strong>. Fahrzeugeigentümer können <br>ihre Fahrzeuge <i>registrieren</i> und für festgelegte Zeiten 
-      zur <i>Buchung</i> freigeben. Andere Nutzer können eine <i> <br>Reservierung oder Buchung anfragen</i>, die vom Eigentümer <i>bestätigt</i> werden muss. 
-      Auf diese Weise können <br>Nutzer ein Fahrzeug für den gewünschten Zeitraum gegen eine <i>Gebühr</i> ausleihen. 
-     Fahrzeugeigentümer erhalten am <br>Monatsende eine <i>Gutschrift</i> entsprechend der Ausleihdauer. </p> 
-  </div>
-
-  
-
-  <div id="features" class="window">
-    <p>Dieses System wurde im Rahmen des Moduls <i>Softwareparktikum</i> entwickelt, um <i>hautnah</i> mitzuerleben, wie ein <strong>Software</strong> entwickelt wird.</p>
-    <p>Das Software wurde als <strong>Desktopanwendung für Linux</strong> entwickelt, um private Fahrzeuge anzumieten oder zu vermieten.</p>
-    <p>Für die Nutzung dieses Sofwares ist ein <strong> Benutzerkonto </strong> sowie den Nachweis eines gültigen <strong> Führerscheins </strong> erforderlich!</p>
-
-   
-    <div class="container-wrapper">
-      <div class="container_v">
-        <h3>Möglichkeiten als Vermieter:</h3>
-        <ul>
-          <li><strong>Fahrzeug registrieren</strong></li>
-          <li><strong>Buchungen nach Belieben bestätigen / ablehnen</strong></li>
-          <li><strong>Flexible Fahrzeugverfügungszeiträume</strong></li>
-          <li><strong>Mehrere Fahrzeuge zur Vermietung zur Verfügung stellen</strong></li>
-        </ul>
+  <!-- Hero / Home -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>U Car System</h1>
+        <p class="hero-tagline">Private Fahrzeuge einfach teilen – flexibel, sicher und unkompliziert.</p>
+        <p class="hero-description">
+          U-Car verbindet Privatpersonen, die ihr Fahrzeug selten nutzen, mit denen, die spontan eines benötigen.
+          Eigentümer geben ihre Fahrzeuge für festgelegte Zeiten zur Buchung frei –
+          Mieter reservieren unkompliziert und zahlen nur für die tatsächliche Nutzung.
+        </p>
+        <div class="hero-actions">
+          <a href="#" onclick="showSection('features')" class="btn btn-primary">Mehr erfahren</a>
+          <a href="#" onclick="showSection('kontakt')" class="btn btn-outline">Kontakt aufnehmen</a>
+        </div>
       </div>
-      <div class="container_m">
-        <h3>Möglichkeiten als Mieter:</h3>
-        <ul>
-          <li><strong>Fahrzeug buchen</strong></li>
-          <li><strong>Flexible Fahrzeugverfügungszeiträume eingeben</strong></li>
-          <li><strong>Mehrere Buchungen tätigen</strong></li>
-          <li><strong>Kein Nachweis einer Kreditkarte erforderlich</strong></li>
-        </ul>
+    </section>
+
+    <!-- Features / Anforderungen -->
+    <section id="features" class="section hidden">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>Anforderungen &amp; Funktionen</h2>
+          <p>Entwickelt im Rahmen des Moduls <em>Softwarepraktikum</em> als Desktopanwendung für Linux.</p>
+          <p>Zur Nutzung sind ein <strong>Benutzerkonto</strong> sowie der Nachweis eines gültigen <strong>Führerscheins</strong> erforderlich.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card card-landlord">
+            <div class="card-icon">&#127968;</div>
+            <h3>Als Vermieter</h3>
+            <ul>
+              <li>Fahrzeug registrieren</li>
+              <li>Buchungen bestätigen oder ablehnen</li>
+              <li>Flexible Verfügbarkeitszeiträume festlegen</li>
+              <li>Mehrere Fahrzeuge gleichzeitig anbieten</li>
+              <li>Monatliche Gutschrift entsprechend der Ausleihdauer</li>
+            </ul>
+          </div>
+          <div class="card card-tenant">
+            <div class="card-icon">&#128663;</div>
+            <h3>Als Mieter</h3>
+            <ul>
+              <li>Fahrzeug buchen oder reservieren</li>
+              <li>Flexible Zeiträume selbst wählen</li>
+              <li>Mehrere Buchungen gleichzeitig tätigen</li>
+              <li>Kein Kreditkartennachweis erforderlich</li>
+              <li>Buchungsanfrage an Eigentümer senden</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-
-  <div id="Fahrzeugauswahl" class="window">
-    <div class="fahrzeuge-container">
-      <div class="fahrzeuge">
-        <ul>
-          <li><strong>Cabrios</strong></li>
-          <li><strong>Kleinwagen</strong></li>
-          <li><strong>Limosine</strong></li>
-          <li><strong>SUV</strong></li>
-        </ul>
+    <!-- Fahrzeugauswahl -->
+    <section id="fahrzeugauswahl" class="section hidden">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>Fahrzeugauswahl</h2>
+          <p>Wählen Sie aus verschiedenen Fahrzeugkategorien – für jeden Bedarf das passende Modell.</p>
+        </div>
+        <div class="vehicle-grid">
+          <div class="vehicle-card">
+            <div class="vehicle-icon">&#127946;</div>
+            <h3>Cabrio</h3>
+            <p>Offen und sportlich – ideal für schöne Tage.</p>
+          </div>
+          <div class="vehicle-card">
+            <div class="vehicle-icon">&#128663;</div>
+            <h3>Kleinwagen</h3>
+            <p>Wendig und sparsam – perfekt für die Stadt.</p>
+          </div>
+          <div class="vehicle-card">
+            <div class="vehicle-icon">&#128664;</div>
+            <h3>Limousine</h3>
+            <p>Komfortabel und stilvoll – für lange Strecken.</p>
+          </div>
+          <div class="vehicle-card">
+            <div class="vehicle-icon">&#128652;</div>
+            <h3>SUV</h3>
+            <p>Geräumig und robust – für jedes Gelände.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
+    <!-- Kontakt -->
+    <section id="kontakt" class="section hidden">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>Kontakt</h2>
+          <p>Wir freuen uns über Ihre Nachricht – per Formular oder direkt.</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Direkt erreichen</h3>
+            <p>
+              <span class="contact-label">E-Mail</span>
+              <a href="mailto:ucan.with.ucar@gmail.com">ucan.with.ucar@gmail.com</a>
+            </p>
+            <p>
+              <span class="contact-label">Telefon</span>
+              <span>+49 17x xxx xxxxx</span>
+            </p>
+          </div>
+          <form class="contact-form" action="" method="get">
+            <div class="form-group">
+              <label for="email">E-Mail-Adresse</label>
+              <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Ihre Nachricht</label>
+              <textarea id="message" name="message" rows="6" placeholder="Schreiben Sie uns..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</div>
-<div id="Kontakt" class="window">
-  <div class="kontakt">
-   
-    <h2>Kontakt</h2>
-    <p id=""> Sie können uns sowohl über unseren Kontaktformular als auch über unseren 
-      Mobil-Telefon erreichen.</p>
-      <strong>Email:</strong></p>
-    <address>
-      
-      <p> ucan.with.ucar@gmail.com
-      <strong>Tel: +4917x xxx xxxxx</strong> </p>
-    </address>
-  </div>
-  <div id="contact_formular">
-    <form action="" method="get" class"contact-form">
-      <div> <input type="email" name="email" id="email" placeholder="Enter your email" required></div>
-        <div><textarea type="text" name="message" id="message-box" placeholder="Enter your message"></textarea></div>      
-        <button id="submit-button" type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-
-
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2023 U Car System. Alle Rechte vorbehalten.</p>
   </footer>
 
-  
   <script>
-    function showWindow(windowId) {
-      var windows = document.getElementsByClassName('window');
-      for (var i = 0; i < windows.length; i++) {
-        windows[i].style.display = 'none';
+    function showSection(id) {
+      // Close mobile menu
+      document.getElementById('nav-links').classList.remove('open');
+
+      // Hide hero
+      document.getElementById('home').classList.add('hidden');
+
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(s => s.classList.add('hidden'));
+
+      // Show target with animation
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.remove('hidden');
+        target.classList.add('fade-in');
+        target.addEventListener('animationend', () => target.classList.remove('fade-in'), { once: true });
       }
-      document.getElementById(windowId).style.display = 'block';
-      document.getElementById('container-home').style.display = 'none'; 
+    }
+
+    function showHome() {
+      document.getElementById('nav-links').classList.remove('open');
+      document.querySelectorAll('.section').forEach(s => s.classList.add('hidden'));
+      const hero = document.getElementById('home');
+      hero.classList.remove('hidden');
+      hero.classList.add('fade-in');
+      hero.addEventListener('animationend', () => hero.classList.remove('fade-in'), { once: true });
+    }
+
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
     }
   </script>
 </body>
