@@ -1,5 +1,5 @@
 # ucar.github.io
-U Car is a software development project, developed in a Team of four during the university software-Module called **Software Praktikum**. The Practical part of the theory learned  during the the module **Software-Enginerring** 
+U Car is a software development project, developed in a team of four during the university software-Module called **Software Praktikum**. The Practical part of the theory learned  during the the module **Software-Enginerring** 
 
 # Product 
 **U-Car** is an application that allows car owners to lend thier cars to customers. 
